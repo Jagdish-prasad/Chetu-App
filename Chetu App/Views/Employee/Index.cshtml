@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Chetu_App.Models.Employee>
+@{
+}
+<table class="table alert-danger table-bordered">
+    <tr>
+        <th>id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Mobile</th>
+    </tr> 
+ @foreach(var emp in Model)
+            {
+<tr>
+    <td>@emp.id</td>
+    <td>@emp.FirstName</td>
+    <td>@emp.LastName</td>
+    <td>@emp.Email</td>
+    <td>@emp.Mobile</td>
+    
+</tr>
+            } 
+
+</table>
